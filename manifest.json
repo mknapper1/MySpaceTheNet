@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "MySpaceThe.Net",
+  "description": "Relive the glory of MySpace; Sans Tom",
+  "version": "1.0",
+  "background": {"page": "docs/MySpaceTheNet.html"},
+
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon19.png"
+    }
+  },
+  "content_scripts": [{
+    "js": ["scripts/jquery-2.2.1.min.js", "scripts/MySpaceTheNet.js"],
+    "css": ["styles/MySpaceTheNet.css"],
+    "matches": [ "http://*/*", "https://*/*"]
+    }]
+}
