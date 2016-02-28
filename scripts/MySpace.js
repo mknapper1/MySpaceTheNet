@@ -161,6 +161,11 @@ function fetchApiToken(image) {
   });
 }
 
+function stripCSS() {
+  $('html').removeClass();
+  $('body').removeClass();
+}
+
 (function(document) {
 
   test = function() {
@@ -185,4 +190,6 @@ function fetchApiToken(image) {
   fetchApiToken();
   test();
   setInterval(test, 3000);
+
+  stripCSS();
 })(document);
