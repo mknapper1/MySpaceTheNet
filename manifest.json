@@ -16,7 +16,7 @@
     }
   },
   "content_scripts": [{
-    "js": ["scripts/jquery-2.2.1.min.js", "scripts/MySpaceTheNet.js"],
+    "js": ["scripts/jquery-2.2.1.min.js", "scripts/MySpace.js"],
     "css": ["styles/MySpaceTheNet.css"],
     "matches": [ "http://*/*", "https://*/*"]
     }]
